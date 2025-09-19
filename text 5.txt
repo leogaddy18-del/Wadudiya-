@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Al-Halqat-ul Wadudiyya</title>
+  <meta name="description" content="Official website of Al-Halqat-ul Wadudiyya - Islamic school in Kumasi, Ghana">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f8fa; --primary:#0b5c4a; --accent:#d4af37; --text:#222; --muted:#666;
+      --radius:12px; --max:1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    header{background:var(--primary);color:white;padding:16px 20px}
+    header .wrap{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between}
+    nav ul{list-style:none;display:flex;gap:20px}
+    nav a{color:white;text-decoration:none;font-weight:600}
+
+    .hero{background:linear-gradient(rgba(11,92,74,0.8),rgba(11,92,74,0.8)), url('https://picsum.photos/1200/480?random=22');background-size:cover;background-position:center;color:white;text-align:center;padding:80px 20px}
+    .hero h1{font-size:40px;margin-bottom:12px}
+    .hero p{max-width:700px;margin:0 auto;font-size:18px}
+
+    section{max-width:var(--max);margin:40px auto;padding:0 20px}
+    h2{margin-bottom:16px;color:var(--primary)}
+    .card{background:white;border-radius:var(--radius);padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .grid{display:grid;gap:20px}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+
+    footer{background:#0b5c4a;color:white;text-align:center;padding:20px;margin-top:40px}
+    footer p{margin:4px 0}
+
+    form{display:grid;gap:12px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid #ccc;font:inherit}
+    button{background:var(--primary);color:white;padding:10px;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+    button:hover{background:#094637}
+    .map-link{display:inline-block;margin-top:12px;font-weight:600;color:var(--primary);text-decoration:none}
+    .map-link:hover{text-decoration:underline}
+
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .badge{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#f59e0b);display:flex;align-items:center;justify-content:center;font-weight:800;color:#082018}
+
+    iframe.map{width:100%;height:300px;border:0;border-radius:12px;margin-top:12px}
+
+    @media (max-width:700px){
+      .hero{padding:40px 20px}
+      header .wrap{flex-direction:column;gap:12px}
+      nav ul{flex-wrap:wrap;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <div class="badge">AH</div>
+        <div>
+          <div style="font-weight:800;font-size:18px">Al-Halqat-ul Wadudiyya</div>
+          <div style="font-size:13px;color:var(--muted)">Knowledge & Character for a Noble Future</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Al-Halqat-ul Wadudiyya</h1>
+    <p>We are delighted to welcome you to our school community, a place where knowledge and character are nurtured in the light of Islamic values. At Al-Halqat-ul Wadudiyya, true education goes beyond academic excellence; it is about cultivating noble character (akhlaaq) and righteous conduct (adaab) in students.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p>Al-Halqat-ul Wadudiyya is an Islamic educational institution dedicated to providing a balanced curriculum that integrates traditional Islamic sciences with modern academic subjects. The school’s mission is to nurture students who are knowledgeable, compassionate, and committed to serving their communities with integrity and faith.</p>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <div class="card">
+      <p>To inspire a generation of learners who embody Islamic values, excel academically, and contribute positively to society.</p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <h2>Mission</h2>
+    <div class="card">
+      <ul>
+        <li>Provide high-quality Islamic and secular education</li>
+        <li>Foster moral and spiritual development</li>
+        <li>Encourage critical thinking and creativity</li>
+        <li>Build a supportive and inclusive learning environment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>Programs</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Qur’anic Studies</h3>
+        <ul>
+          <li>Memorization (Hifz) and recitation</li>
+          <li>Tajweed</li>
+          <li>Islamic Studies</li>
+          <li>Fiqh (Islamic jurisprudence)</li>
+          <li>Aqeedah (creed and beliefs)</li>
+          <li>Seerah (life of the Prophet Muhammad ﷺ)</li>
+          <li>Islamic history and ethics</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Character Development</h3>
+        <ul>
+          <li>Akhlaaq (manners and ethics)</li>
+          <li>Adaab (etiquette)</li>
+          <li>Leadership and community service</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Specialized Training</h3>
+        <p>Focused Quran memorization and Tajweed instruction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p><strong>Email:</strong> leogaddy18@gmail.com</p>
+      <p><strong>Phone:</strong> +233596362440</p>
+      <p><strong>Address:</strong> Kumasi, Ghana</p>
+
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <iframe class="map" src="https://www.google.com/maps?q=6.696056,-1.591222&z=16&output=embed" loading="lazy"></iframe>
+      <a class="map-link" href="https://maps.google.com/?q=6.696056,-1.591222" target="_blank">View on Google Maps</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Al-Halqat-ul Wadudiyya — Knowledge & Character for a Noble Future</p>
+    <p>© 2025 Al-Halqat-ul Wadudiyya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      const message=document.getElementById('message').value;
+      if(!name||!email||!message){alert('Please fill all fields');return}
+      const subject=encodeURIComponent('Message from '+name+' - Al-Halqat-ul Wadudiyya Website');
+      const body=encodeURIComponent(message+'\n\nFrom: '+name+' ('+email+')');
+      window.location.href='mailto:leogaddy18@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
